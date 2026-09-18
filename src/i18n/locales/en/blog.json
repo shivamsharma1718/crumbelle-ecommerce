@@ -1,0 +1,37 @@
+{
+  "blog": {
+    "title": "The Crumbelle Journal",
+    "subtitle": "Stories, recipes, and baking secrets straight from our kitchen to yours.",
+    "readArticle": "Read Article",
+    "loadMore": "Load More Articles",
+    "posts": {
+      "science-of-sourdough": {
+        "title": "The Secret Science Behind Our 48-Hour Sourdough",
+        "excerpt": "Discover why good things take time. We explore the wild yeast fermentation process that gives our signature sourdough its distinct tangy flavor and chewy crumb.",
+        "category": "Behind the Scenes"
+      },
+      "perfect-croissant-guide": {
+        "title": "How to Tell if Your Croissant is Actually Good",
+        "excerpt": "Is it flaky? Does it shatter? We break down the anatomy of a perfect French butter croissant and what you should be looking for at your local bakery.",
+        "category": "Guides"
+      },
+      "eggless-baking-tips": {
+        "title": "5 Secrets to Fluffy Eggless Cakes",
+        "excerpt": "Baking without eggs doesn't mean compromising on texture. Our head baker shares her top tips for achieving the perfect rise and crumb in eggless sponge cakes.",
+        "category": "Recipes & Tips"
+      }
+    },
+    "notFoundTitle": "Article Not Found",
+    "notFoundDesc": "The story you're looking for doesn't exist.",
+    "backToJournal": "Back to Journal",
+    "bodyH2": "The Beginning of the Process",
+    "bodyP1": "Creating artisan bakery items requires more than just mixing ingredients. It is a slow, methodical process that demands respect for temperature, hydration, and time. When we speak about our signature sourdough, we're actually talking about a living ecosystem of wild yeast and lactic acid bacteria.",
+    "bodyH3": "Why 48 Hours?",
+    "bodyP2": "Most commercial bread is made from start to finish in under three hours using commercial yeast. This rapid process produces a loaf quickly, but leaves much to be desired in terms of flavor and digestibility. By slowing down the fermentation process through cold proofing, we achieve three critical things:",
+    "li1": "Deep flavor development: The bacteria have time to produce organic acids (lactic and acetic acid) which give the bread its characteristic tang.",
+    "li2": "Better structure: The extended time allows the gluten network to develop naturally and align, resulting in a perfectly chewy crumb.",
+    "li3": "Easier digestion: The long fermentation begins the breakdown of complex carbohydrates and neutralize phytic acid.",
+    "quote": "Good bread doesn't happen by accident. It happens through patience.",
+    "bodyP3": "We invite you to taste the difference. Next time you pick up a loaf from our store, take a moment to smell the complex aroma before your first bite. We promise it's worth the wait."
+  }
+}

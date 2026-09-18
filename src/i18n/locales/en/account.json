@@ -1,0 +1,26 @@
+{
+  "account": {
+    "profile": "Profile",
+    "orders": "Orders",
+    "wishlist": "Wishlist",
+    "addresses": "Addresses",
+    "settings": "Settings",
+    "logout": "Logout",
+    "loyaltyPoints": "Loyalty Points",
+    "personalInfo": "Personal Information",
+    "edit": "Edit",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "emailNoChange": "(Cannot be changed)",
+    "notProvided": "Not provided",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "yourWishlist": "Your Wishlist",
+    "wishlistEmpty": "Wishlist is empty",
+    "wishlistEmptyDesc": "Save your favourite treats here for later.",
+    "comingSoon": "Coming Soon",
+    "comingSoonDesc": "We're working hard to bring this feature to you."
+  }
+}

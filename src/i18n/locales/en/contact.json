@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you. Drop by our bakery or send us a message below.",
+    "locationTitle": "Visit Our Bakery",
+    "address": "123 Baker Street, Sweet District\nMumbai, Maharashtra 400001",
+    "contactInfo": "Contact Info",
+    "phone": "+91 98765 43210",
+    "email": "hello@crumbelle.com",
+    "hoursTitle": "Operating Hours",
+    "hoursWeekdays": "Mon - Sat: 8:00 AM - 9:00 PM",
+    "hoursWeekend": "Sunday: 9:00 AM - 6:00 PM",
+    "sendMessage": "Send a Message",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "How can we help you?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "submitBtn": "Send Message",
+    "sending": "Sending...",
+    "successMsg": "Message sent successfully! We'll get back to you soon."
+  }
+}

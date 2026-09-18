@@ -1,0 +1,29 @@
+{
+  "cart": {
+    "emptyBasket": "आपकी टोकरी खाली है",
+    "emptyBasketDesc": "ऐसा लगता है कि आपने अभी तक अपनी टोकरी में हमारे कोई भी स्वादिष्ट बेक नहीं जोड़े हैं।",
+    "startShopping": "खरीदारी शुरू करें",
+    "title": "शॉपिंग बास्केट",
+    "itemsSelected": "{{count}} आइटम चुने गए",
+    "remove": "हटाएं",
+    "size": "आकार",
+    "flavor": "स्वाद",
+    "subtotal": "उप-योग",
+    "continueShopping": "खरीदारी जारी रखें",
+    "clearBasket": "टोकरी साफ़ करें",
+    "orderSummary": "ऑर्डर सारांश",
+    "couponPlaceholder": "प्रोमो / गिफ्ट कोड",
+    "apply": "लागू करें",
+    "applied": "लागू हुआ",
+    "saving": "आप इस ऑर्डर पर {{amount}}% बचा रहे हैं!",
+    "removeCoupon": "कूपन हटाएं",
+    "discount": "छूट",
+    "delivery": "डिलीवरी",
+    "free": "मुफ़्त",
+    "tax": "अनुमानित कर (5%)",
+    "total": "कुल",
+    "freeDeliveryPrompt": "मुफ़्त डिलीवरी पाने के लिए ₹{{amount}} और जोड़ें! 🚚",
+    "secureCheckout": "सुरक्षित चेकआउट",
+    "securePayments": "100% सुरक्षित और सेफ भुगतान"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "title": "संपर्क करें",
+    "subtitle": "हमें आपसे सुनना अच्छा लगेगा। हमारी बेकरी में आएं या हमें नीचे संदेश भेजें।",
+    "locationTitle": "हमारी बेकरी पर आएं",
+    "address": "123 बेकर स्ट्रीट, स्वीट डिस्ट्रिक्ट\nमुंबई, महाराष्ट्र 400001",
+    "contactInfo": "संपर्क जानकारी",
+    "phone": "+91 98765 43210",
+    "email": "hello@crumbelle.com",
+    "hoursTitle": "खुलने का समय",
+    "hoursWeekdays": "सोम - शनि: सुबह 8:00 - रात 9:00",
+    "hoursWeekend": "रविवार: सुबह 9:00 - शाम 6:00",
+    "sendMessage": "संदेश भेजें",
+    "nameLabel": "आपका नाम",
+    "namePlaceholder": "जॉन डो",
+    "emailLabel": "ईमेल पता",
+    "emailPlaceholder": "john@example.com",
+    "subjectLabel": "विषय",
+    "subjectPlaceholder": "हम आपकी कैसे मदद कर सकते हैं?",
+    "messageLabel": "संदेश",
+    "messagePlaceholder": "अपना संदेश यहाँ लिखें...",
+    "submitBtn": "संदेश भेजें",
+    "sending": "भेजा जा रहा है...",
+    "successMsg": "संदेश सफलतापूर्वक भेजा गया! हम जल्द ही आपसे संपर्क करेंगे।"
+  }
+}

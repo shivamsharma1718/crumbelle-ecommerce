@@ -1,0 +1,26 @@
+{
+  "account": {
+    "profile": "प्रोफ़ाइल",
+    "orders": "ऑर्डर",
+    "wishlist": "विशलिस्ट",
+    "addresses": "पते",
+    "settings": "सेटिंग्स",
+    "logout": "लॉग आउट",
+    "loyaltyPoints": "लॉयल्टी पॉइंट्स",
+    "personalInfo": "व्यक्तिगत जानकारी",
+    "edit": "संपादित करें",
+    "firstName": "पहला नाम",
+    "lastName": "अंतिम नाम",
+    "phone": "फ़ोन नंबर",
+    "email": "ईमेल पता",
+    "emailNoChange": "(बदला नहीं जा सकता)",
+    "notProvided": "प्रदान नहीं किया गया",
+    "saveChanges": "परिवर्तन सहेजें",
+    "cancel": "रद्द करें",
+    "yourWishlist": "आपकी विशलिस्ट",
+    "wishlistEmpty": "विशलिस्ट खाली है",
+    "wishlistEmptyDesc": "अपनी पसंदीदा मिठाइयों को बाद के लिए यहाँ सहेजें।",
+    "comingSoon": "जल्द आ रहा है",
+    "comingSoonDesc": "हम इस सुविधा को आप तक लाने के लिए कड़ी मेहनत कर रहे हैं।"
+  }
+}

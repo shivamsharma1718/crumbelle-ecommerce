@@ -1,0 +1,29 @@
+{
+  "cart": {
+    "emptyBasket": "Your Basket is Empty",
+    "emptyBasketDesc": "Looks like you haven't added any of our delicious bakes to your basket yet.",
+    "startShopping": "Start Shopping",
+    "title": "Shopping Basket",
+    "itemsSelected": "{{count}} items selected",
+    "remove": "Remove item",
+    "size": "Size",
+    "flavor": "Flavor",
+    "subtotal": "Subtotal",
+    "continueShopping": "Continue Shopping",
+    "clearBasket": "Clear Basket",
+    "orderSummary": "Order Summary",
+    "couponPlaceholder": "Promo / Gift Code",
+    "apply": "Apply",
+    "applied": "Applied",
+    "saving": "You're saving {{amount}}% on this order!",
+    "removeCoupon": "Remove coupon",
+    "discount": "Discount",
+    "delivery": "Delivery",
+    "free": "Free",
+    "tax": "Estimated Tax (5%)",
+    "total": "Total",
+    "freeDeliveryPrompt": "Add ₹{{amount}} more to get FREE Delivery! 🚚",
+    "secureCheckout": "Secure Checkout",
+    "securePayments": "100% Safe & Secure Payments"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pageTitle": "दुकान - माधब बेकरी",
+  "heading": "हमारे उत्पाद",
+  "filters": {
+    "title": "फ़िल्टर",
+    "category": "श्रेणी",
+    "priceRange": "मूल्य सीमा",
+    "rating": "रेटिंग",
+    "availability": "उपलब्धता",
+    "inStockOnly": "केवल स्टॉक में",
+    "sortBy": "इस आधार पर क्रमबद्ध करें",
+    "newest": "नवीनतम पहले",
+    "priceAsc": "कीमत: कम से अधिक",
+    "priceDesc": "कीमत: अधिक से कम",
+    "popularity": "सबसे लोकप्रिय",
+    "topRated": "सर्वोच्च रेटिंग",
+    "clearAll": "सभी फ़िल्टर हटाएं"
+  },
+  "results": {
+    "showing": "{{count}} उत्पाद दिखाए जा रहे हैं",
+    "noProducts": "कोई उत्पाद नहीं मिला",
+    "noProductsHint": "फ़िल्टर या खोज बदलकर देखें"
+  },
+  "card": {
+    "addToCart": "कार्ट में जोड़ें",
+    "addedToCart": "जोड़ा गया!",
+    "quickView": "त्वरित देखें",
+    "perKg": "/ किलो",
+    "perPiece": "/ पीस",
+    "customisable": "कस्टमाइज़ करें"
+  },
+  "detail": {
+    "description": "विवरण",
+    "ingredients": "सामग्री",
+    "nutritionInfo": "पोषण जानकारी",
+    "allergyInfo": "एलर्जी जानकारी",
+    "deliveryInfo": "डिलीवरी जानकारी",
+    "reviews": "ग्राहक समीक्षाएं",
+    "writeReview": "समीक्षा लिखें",
+    "noReviews": "अभी तक कोई समीक्षा नहीं। पहले बनें!",
+    "quantity": "मात्रा",
+    "selectFlavour": "स्वाद चुनें",
+    "selectSize": "आकार चुनें",
+    "addNote": "नोट जोड़ें (वैकल्पिक)",
+    "notePlaceholder": "जैसे केक पर 'Happy Birthday John' लिखें",
+    "shareProduct": "उत्पाद शेयर करें",
+    "eggless": "एगलेस उपलब्ध",
+    "customOrder": "कस्टम ऑर्डर करें"
+  }
+}

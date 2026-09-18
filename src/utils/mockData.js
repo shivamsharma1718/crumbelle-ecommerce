@@ -1,0 +1,242 @@
+/* ─── helper ─────────────────────────────────────────── */
+const img = (w, h, bg, text) =>
+  `https://placehold.co/${w}x${h}/${bg}/ffffff?text=${encodeURIComponent(text)}&font=playfair-display`;
+
+/* ─── Products ───────────────────────────────────────── */
+export const PRODUCTS = [
+  // ── Cakes ──────────────────────────────────────────────
+  {
+    id: 1, slug: 'classic-birthday-cake', category: 'cakes',
+    name: 'Classic Birthday Cake', nameHi: 'क्लासिक बर्थडे केक',
+    description: 'A timeless moist vanilla sponge layered with rich buttercream frosting, adorned with fresh berries and edible gold flakes.',
+    price: 899, mrp: 1099,  weight: '500g', serves: '6-8',
+    rating: 4.8, reviews: 312, image: img(400,300,'F97316','Birthday+Cake'),
+    tag: 'bestseller', eggless: true, customisable: true,
+    flavours: ['Vanilla','Chocolate','Strawberry','Butterscotch'],
+    sizes: ['500g','1kg','1.5kg','2kg'],
+    inStock: true,
+  },
+  {
+    id: 2, slug: 'chocolate-truffle-cake', category: 'cakes',
+    name: 'Chocolate Truffle Cake', nameHi: 'चॉकलेट ट्रफल केक',
+    description: 'Intensely rich Belgian chocolate layers smothered in silky dark chocolate ganache. Pure indulgence in every bite.',
+    price: 1099, mrp: 1299, weight: '500g', serves: '6-8',
+    rating: 4.9, reviews: 498, image: img(400,300,'7C2D12','Chocolate+Truffle'),
+    tag: 'bestseller', eggless: true, customisable: true,
+    flavours: ['Dark Chocolate','Milk Chocolate','White Chocolate'],
+    sizes: ['500g','1kg','1.5kg'],
+    inStock: true,
+  },
+  {
+    id: 3, slug: 'red-velvet-cake', category: 'cakes',
+    name: 'Red Velvet Cake', nameHi: 'रेड वेलवेट केक',
+    description: 'Velvety red cocoa layers paired with our signature cream cheese frosting. A classic that never goes out of style.',
+    price: 1199, mrp: 1399, weight: '500g', serves: '8-10',
+    rating: 4.7, reviews: 267, image: img(400,300,'BE123C','Red+Velvet'),
+    tag: 'new', eggless: false, customisable: true,
+    flavours: ['Classic Red Velvet'],
+    sizes: ['500g','1kg','2kg'],
+    inStock: true,
+  },
+  {
+    id: 4, slug: 'black-forest-cake', category: 'cakes',
+    name: 'Black Forest Cake', nameHi: 'ब्लैक फॉरेस्ट केक',
+    description: 'Soft chocolate sponge soaked in cherry liqueur, layered with whipped cream and fresh cherries.',
+    price: 999, mrp: 1199, weight: '500g', serves: '6-8',
+    rating: 4.8, reviews: 389, image: img(400,300,'1C1917','Black+Forest'),
+    tag: 'bestseller', eggless: false, customisable: true,
+    flavours: ['Classic','Extra Cherry'],
+    sizes: ['500g','1kg','1.5kg'],
+    inStock: true,
+  },
+  {
+    id: 5, slug: 'pineapple-pastry-cake', category: 'cakes',
+    name: 'Pineapple Pastry Cake', nameHi: 'पाइनएप्पल केक',
+    description: 'Light vanilla sponge with fresh pineapple cream and chunky pineapple pieces. Refreshing and delightful.',
+    price: 799, mrp: 949,  weight: '500g', serves: '6-8',
+    rating: 4.6, reviews: 201, image: img(400,300,'CA8A04','Pineapple+Cake'),
+    tag: null, eggless: true, customisable: false,
+    flavours: ['Classic Pineapple'],
+    sizes: ['500g','1kg'],
+    inStock: true,
+  },
+
+  // ── Breads ──────────────────────────────────────────────
+  {
+    id: 6, slug: 'sourdough-bread', category: 'breads',
+    name: 'Classic Sourdough Loaf', nameHi: 'Classic Sourdough ब्रेड',
+    description: 'Long-fermented sourdough with a crispy crust and chewy open crumb. Baked fresh every morning.',
+    price: 249, mrp: 299, weight: '400g', serves: '4-6',
+    rating: 4.7, reviews: 178, image: img(400,300,'92400E','Sourdough'),
+    tag: 'new', eggless: true, customisable: false,
+    flavours: ['Plain','Herb & Garlic','Whole Wheat'],
+    sizes: ['400g','800g'],
+    inStock: true,
+  },
+  {
+    id: 7, slug: 'multigrain-bread', category: 'breads',
+    name: 'Multigrain Sandwich Bread', nameHi: 'मल्टीग्रेन ब्रेड',
+    description: 'Loaded with 7 grains and seeds. Perfectly sliced for your daily sandwiches and toast.',
+    price: 199, mrp: 239, weight: '400g', serves: '4-6',
+    rating: 4.5, reviews: 134, image: img(400,300,'78350F','Multigrain'),
+    tag: null, eggless: true, customisable: false,
+    flavours: ['Classic','Seeds & Nuts'],
+    sizes: ['400g','800g'],
+    inStock: true,
+  },
+  {
+    id: 8, slug: 'garlic-herb-focaccia', category: 'breads',
+    name: 'Garlic Herb Focaccia', nameHi: 'गार्लिक फोकाशिया',
+    description: 'Italian flatbread drizzled with olive oil, studded with roasted garlic and fresh rosemary.',
+    price: 299, mrp: 349, weight: '350g', serves: '4-6',
+    rating: 4.9, reviews: 223, image: img(400,300,'A16207','Focaccia'),
+    tag: 'bestseller', eggless: true, customisable: false,
+    flavours: ['Garlic Rosemary','Tomato Olive','Plain'],
+    sizes: ['350g'],
+    inStock: true,
+  },
+
+  // ── Pastries ─────────────────────────────────────────────
+  {
+    id: 9, slug: 'butter-croissant', category: 'pastries',
+    name: 'Butter Croissant', nameHi: 'बटर क्रोइसां',
+    description: 'Flaky, golden and buttery — made with 100% pure butter and 72-hour laminated dough.',
+    price: 89, mrp: 109, weight: '80g', serves: '1',
+    rating: 4.8, reviews: 445, image: img(400,300,'D97706','Croissant'),
+    tag: 'bestseller', eggless: false, customisable: false,
+    flavours: ['Plain','Almond','Chocolate'],
+    sizes: ['1 pc','2 pcs','4 pcs','6 pcs'],
+    inStock: true,
+  },
+  {
+    id: 10, slug: 'chocolate-eclair', category: 'pastries',
+    name: 'Chocolate Éclair', nameHi: 'चॉकलेट एक्लेयर',
+    description: 'Light choux pastry filled with velvety chocolate custard and glazed with pure dark chocolate.',
+    price: 99, mrp: 119, weight: '90g', serves: '1',
+    rating: 4.7, reviews: 312, image: img(400,300,'431407','Eclair'),
+    tag: null, eggless: false, customisable: false,
+    flavours: ['Dark Chocolate','Caramel'],
+    sizes: ['1 pc','2 pcs','4 pcs'],
+    inStock: true,
+  },
+  {
+    id: 11, slug: 'danish-pastry', category: 'pastries',
+    name: 'Apple Danish Pastry', nameHi: 'एप्पल डेनिश',
+    description: 'Buttery Danish dough swirled with cinnamon-spiced apple filling and drizzled with vanilla glaze.',
+    price: 119, mrp: 139, weight: '100g', serves: '1',
+    rating: 4.6, reviews: 189, image: img(400,300,'B45309','Danish'),
+    tag: 'new', eggless: false, customisable: false,
+    flavours: ['Apple Cinnamon','Blueberry','Strawberry'],
+    sizes: ['1 pc','4 pcs'],
+    inStock: true,
+  },
+
+  // ── Cookies ─────────────────────────────────────────────
+  {
+    id: 12, slug: 'chocolate-chip-cookies', category: 'cookies',
+    name: 'Chocolate Chip Cookies', nameHi: 'चॉकलेट चिप कुकीज़',
+    description: 'Thick, chewy, golden-edged cookies loaded with Belgian chocolate chips. The ultimate comfort cookie.',
+    price: 199, mrp: 239, weight: '200g', serves: '6 pcs',
+    rating: 4.9, reviews: 567, image: img(400,300,'92400E','Choco+Chip'),
+    tag: 'bestseller', eggless: false, customisable: false,
+    flavours: ['Classic','Double Chocolate','White Chocolate Chip'],
+    sizes: ['6 pcs','12 pcs','24 pcs'],
+    inStock: true,
+  },
+  {
+    id: 13, slug: 'butter-cookies', category: 'cookies',
+    name: 'Danish Butter Cookies', nameHi: 'बटर कुकीज़',
+    description: 'Melt-in-your-mouth shortbread style butter cookies, delicately flavoured and perfectly crisp.',
+    price: 149, mrp: 179, weight: '200g', serves: '8 pcs',
+    rating: 4.8, reviews: 342, image: img(400,300,'CA8A04','Butter+Cookies'),
+    tag: null, eggless: true, customisable: false,
+    flavours: ['Classic Butter','Vanilla','Cardamom'],
+    sizes: ['8 pcs','16 pcs'],
+    inStock: true,
+  },
+
+  // ── Muffins ─────────────────────────────────────────────
+  {
+    id: 14, slug: 'blueberry-muffin', category: 'muffins',
+    name: 'Blueberry Muffin', nameHi: 'ब्लूबेरी मफ़िन',
+    description: 'Fluffy bakery-style muffin packed with fresh blueberries and a crunchy sugar streusel top.',
+    price: 99, mrp: 119, weight: '120g', serves: '1',
+    rating: 4.8, reviews: 278, image: img(400,300,'1D4ED8','Blueberry+Muffin'),
+    tag: 'bestseller', eggless: false, customisable: false,
+    flavours: ['Blueberry','Double Blueberry'],
+    sizes: ['1 pc','4 pcs','6 pcs'],
+    inStock: true,
+  },
+  {
+    id: 15, slug: 'chocolate-muffin', category: 'muffins',
+    name: 'Triple Chocolate Muffin', nameHi: 'ट्रिपल चॉकलेट मफ़िन',
+    description: 'Rich moist muffin loaded with three kinds of chocolate — dark, milk & white chocolate chunks.',
+    price: 109, mrp: 129, weight: '130g', serves: '1',
+    rating: 4.7, reviews: 198, image: img(400,300,'3B0764','Choco+Muffin'),
+    tag: null, eggless: false, customisable: false,
+    flavours: ['Triple Chocolate','Nutella Swirl'],
+    sizes: ['1 pc','4 pcs','6 pcs'],
+    inStock: true,
+  },
+
+  // ── Cupcakes ─────────────────────────────────────────────
+  {
+    id: 16, slug: 'vanilla-cupcake', category: 'cupcakes',
+    name: 'Vanilla Dream Cupcake', nameHi: 'वेनिला कपकेक',
+    description: 'Light vanilla sponge cupcake topped with swirls of creamy buttercream and coconut flakes.',
+    price: 79, mrp: 99, weight: '90g', serves: '1',
+    rating: 4.6, reviews: 201, image: img(400,300,'FDE68A','Vanilla+Cupcake'),
+    tag: null, eggless: true, customisable: true,
+    flavours: ['Vanilla','Chocolate','Red Velvet','Lemon'],
+    sizes: ['1 pc','4 pcs','6 pcs','12 pcs'],
+    inStock: true,
+  },
+  {
+    id: 17, slug: 'red-velvet-cupcake', category: 'cupcakes',
+    name: 'Red Velvet Cupcake', nameHi: 'रेड वेलवेट कपकेक',
+    description: 'Our famous red velvet in cupcake form, crowned with a generous swirl of cream cheese frosting.',
+    price: 89, mrp: 109, weight: '95g', serves: '1',
+    rating: 4.8, reviews: 267, image: img(400,300,'BE123C','Red+Velvet+CK'),
+    tag: 'bestseller', eggless: false, customisable: true,
+    flavours: ['Red Velvet'],
+    sizes: ['1 pc','4 pcs','6 pcs','12 pcs'],
+    inStock: true,
+  },
+
+  // ── Donuts ──────────────────────────────────────────────
+  {
+    id: 18, slug: 'classic-glazed-donut', category: 'donuts',
+    name: 'Classic Glazed Donut', nameHi: 'ग्लेज़ड डोनट',
+    description: 'Pillowy soft yeast donut with a perfect shiny glaze. A classic that brings instant joy.',
+    price: 69, mrp: 89, weight: '80g', serves: '1',
+    rating: 4.7, reviews: 389, image: img(400,300,'F59E0B','Glazed+Donut'),
+    tag: 'bestseller', eggless: false, customisable: false,
+    flavours: ['Glazed','Chocolate Glazed','Strawberry Glazed'],
+    sizes: ['1 pc','3 pcs','6 pcs','12 pcs'],
+    inStock: true,
+  },
+  {
+    id: 19, slug: 'chocolate-sprinkle-donut', category: 'donuts',
+    name: 'Chocolate Sprinkle Donut', nameHi: 'चॉकलेट डोनट',
+    description: 'Fluffy donut dipped in rich chocolate frosting and covered with rainbow sprinkles. Pure fun!',
+    price: 79, mrp: 99, weight: '85g', serves: '1',
+    rating: 4.8, reviews: 312, image: img(400,300,'7C2D12','Choco+Donut'),
+    tag: null, eggless: false, customisable: false,
+    flavours: ['Chocolate Sprinkle','Double Chocolate','Oreo'],
+    sizes: ['1 pc','3 pcs','6 pcs','12 pcs'],
+    inStock: true,
+  },
+];
+
+export const TESTIMONIALS = [
+  { id: 1, name: 'Priya Sharma',  avatar: '👩', rating: 5, text: 'The birthday cake was absolutely stunning! My daughter loved it and the chocolate truffle flavour was divine. Will definitely order again!', date: 'March 2026' },
+  { id: 2, name: 'Rahul Verma',   avatar: '👨', rating: 5, text: 'Best sourdough in the city! The crust is perfect every time and the delivery was right on time. माधब बेकरी ज़िंदाबाद!', date: 'February 2026' },
+  { id: 3, name: 'Anjali Singh',  avatar: '👩', rating: 5, text: 'Ordered a custom anniversary cake and they exceeded all expectations. The floral design was breathtaking and it tasted even better!', date: 'March 2026' },
+  { id: 4, name: 'Vikram Patel',  avatar: '👨', rating: 4, text: 'The croissants are heavenly — crispy outside, soft inside. My morning ritual now. Always fresh and delivered hot!', date: 'January 2026' },
+  { id: 5, name: 'Meera Nair',    avatar: '👩', rating: 5, text: 'उनके चॉकलेट चिप कुकीज़ बेस्ट हैं! घर जैसा स्वाद और बिल्कुल fresh. Same day delivery also perfect thi.', date: 'February 2026' },
+];
+
+export const getBestSellers = () => PRODUCTS.filter(p => p.tag === 'bestseller');
+export const getNewArrivals = () => PRODUCTS.filter(p => p.tag === 'new');
+export const getByCategory  = (cat) => PRODUCTS.filter(p => p.category === cat);
+export const getBySlug      = (slug) => PRODUCTS.find(p => p.slug === slug);

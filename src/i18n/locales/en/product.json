@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Shop - Crumbelle",
+  "heading": "Our Products",
+  "filters": {
+    "title": "Filters",
+    "category": "Category",
+    "priceRange": "Price Range",
+    "rating": "Rating",
+    "availability": "Availability",
+    "inStockOnly": "In Stock Only",
+    "sortBy": "Sort By",
+    "newest": "Newest First",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "popularity": "Most Popular",
+    "topRated": "Top Rated",
+    "clearAll": "Clear All Filters"
+  },
+  "results": {
+    "showing": "Showing {{count}} products",
+    "noProducts": "No products found",
+    "noProductsHint": "Try adjusting your filters or search term"
+  },
+  "card": {
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added!",
+    "quickView": "Quick View",
+    "perKg": "/ kg",
+    "perPiece": "/ piece",
+    "customisable": "Customisable"
+  },
+  "detail": {
+    "description": "Description",
+    "ingredients": "Ingredients",
+    "nutritionInfo": "Nutrition Info",
+    "allergyInfo": "Allergy Information",
+    "deliveryInfo": "Delivery Information",
+    "reviews": "Customer Reviews",
+    "writeReview": "Write a Review",
+    "noReviews": "No reviews yet. Be the first!",
+    "quantity": "Quantity",
+    "selectFlavour": "Select Flavour",
+    "selectSize": "Select Size",
+    "addNote": "Add a note (optional)",
+    "notePlaceholder": "E.g. Write 'Happy Birthday John' on the cake",
+    "shareProduct": "Share this Product",
+    "eggless": "Eggless Available",
+    "customOrder": "Order Custom"
+  }
+}

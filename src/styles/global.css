@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ── Brand Evolution ────────────────────────────────────── */
+  --color-brand-50:  #fffbeb;
+  --color-brand-100: #fef3c7;
+  --color-brand-200: #fde68a;
+  --color-brand-300: #fcd34d;
+  --color-brand-400: #fbbf24;
+  --color-brand-500: #f59e0b;
+  --color-brand-600: #d97706;
+  --color-brand-700: #b45309;
+  --color-brand-800: #92400e;
+  --color-brand-900: #78350f;
+
+  /* Chocolate/Dark tones - deeper and richer */
+  --color-choco-50:  #fdf8f3;
+  --color-choco-100: #f5e6d0;
+  --color-choco-200: #e8c99b;
+  --color-choco-300: #d4a96a;
+  --color-choco-400: #b8844a;
+  --color-choco-500: #8b5e3c;
+  --color-choco-600: #6b4423;
+  --color-choco-700: #4a2f10;
+  --color-choco-800: #2d1a08;
+  --color-choco-900: #1c0a00;
+
+  /* Rose accent */
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
+
+  /* Backgrounds */
+  --color-cream:      #fffbf0;
+  --color-cream-dark: #f7f0e0;
+
+  /* Fonts - Outfit is more modern and premium for headings */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-accent:  "Outfit", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, sans-serif;
+
+  /* Shadows - softer and more natural */
+  --shadow-warm: 0 4px 24px -4px rgba(180, 83, 9, 0.12);
+  --shadow-card: 0 4px 18px -2px rgba(28, 10, 0, 0.08);
+  --shadow-lg:   0 12px 48px -8px rgba(28, 10, 0, 0.16);
+  --shadow-inner-glow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+
+  /* Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2.25rem;
+  --radius-pill: 9999px;
+}
+
+/* ── Base Layer ───────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-choco-900);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a { 
+    text-decoration: none; 
+    color: inherit;
+  }
+
+  img { 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  button { 
+    cursor: pointer; 
+    font-family: inherit;
+  }
+
+  input, select, textarea { 
+    font-family: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  /* Scrollbar Refinement */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-choco-50); }
+  ::-webkit-scrollbar-thumb { 
+    background: var(--color-choco-200); 
+    border-radius: 10px;
+    border: 2px solid var(--color-choco-50);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-choco-400); }
+}
+
+/* ── Custom Utilities Layer ───────────────────────────────── */
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-accent { font-family: var(--font-accent); }
+
+  .heading-accent {
+    font-family: var(--font-accent);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .container-main {
+    width: 100%;
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container-main {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  /* Premium Glassmorphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: var(--shadow-inner-glow), 0 4px 12px rgba(0,0,0,0.02);
+  }
+
+  .glass-dark {
+    background: rgba(28, 10, 0, 0.75);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Advanced Gradients */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-brand-600) 0%, var(--color-rose-500) 50%, var(--color-brand-800) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-premium-gradient {
+    background: radial-gradient(circle at top left, var(--color-brand-50) 0%, rgba(255,251,240,0) 70%),
+                radial-gradient(circle at bottom right, #fff1eb 0%, rgba(255,241,235,0) 70%);
+    background-color: var(--color-cream);
+  }
+
+  /* Animation Utilities */
+  .hover-lift {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .hover-lift:hover {
+    transform: translateY(-5px);
+  }
+
+  .section-pad { 
+    padding-block: 5rem; 
+  }
+  @media (min-width: 768px) { 
+    .section-pad { 
+      padding-block: 6.5rem; 
+    } 
+  }
+  @media (min-width: 1280px) { 
+    .section-pad { 
+      padding-block: 8rem; 
+    } 
+  }
+
+  /* Custom Checkbox/Radio */
+  .custom-input {
+    accent-color: var(--color-brand-600);
+  }
+
+  /* Hide scrollbar utility */
+  .hide-scrollbar::-webkit-scrollbar { 
+    display: none; 
+  }
+  .hide-scrollbar { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+
+  /* Masking for images */
+  .mask-squircle {
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="%23000" d="M0 50C0 10.6 10.6 0 50 0s50 10.6 50 50-10.6 50-50 50S0 89.4 0 50z"/></svg>');
+    mask-size: cover;
+  }
+
+  /* Loading Shimmer Wrapper */
+  .shimmer-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-choco-100);
+  }
+  .shimmer-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+/* Loading Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

@@ -1,0 +1,8 @@
+{
+  "notFound": {
+    "title": "Oops! We ate that page.",
+    "desc": "The page you are looking for might have been removed, had its name changed, or is temporarily out of stock.",
+    "homeBtn": "Back to Home",
+    "shopBtn": "Browse Shop"
+  }
+}

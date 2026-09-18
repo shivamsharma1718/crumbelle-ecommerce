@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "badge": "Freshly Baked Every Morning",
+    "title1": "Artisan Bakes &",
+    "title2": "Sweet Delights",
+    "subtitle": "Experience the magic of handcrafted pastries, rustic sourdough breads, and custom celebration cakes made with pure love and the finest ingredients.",
+    "ctaShop": "Shop Now",
+    "ctaCustom": "Order Custom Cake",
+    "statClients": "Happy Clients",
+    "statEggless": "Eggless Options",
+    "statRating": "Star Rating",
+    "badgeFloatingTitle": "Baked with Love",
+    "badgeFloatingSub": "Every single day"
+  },
+  "categories": {
+    "title": "Browse by Category",
+    "subtitle": "Find exactly what you're craving today.",
+    "viewAll": "View All Categories"
+  },
+  "featured": {
+    "title": "Chef's Specials",
+    "subtitle": "Our master baker's finest creations, made with premium Madagascar vanilla, Callebaut chocolate, and seasonal fresh fruits.",
+    "explore": "Explore Full Menu"
+  },
+  "whyUs": {
+    "feat1Title": "Baked Fresh Daily",
+    "feat1Desc": "No preservatives, no premixes. Every item is baked fresh from scratch starting at 4 AM every morning.",
+    "feat2Title": "Premium Ingredients",
+    "feat2Desc": "We source real butter, pure vanilla bean, and Belgian couverture chocolate for the finest taste profile.",
+    "feat3Title": "100% Eggless Options",
+    "feat3Desc": "Nearly our entire menu is available in an eggless variant without compromising on taste or texture.",
+    "feat4Title": "Same Day Delivery",
+    "feat4Desc": "Forgot a birthday? We offer lightning-fast safe delivery across the city within 3 hours."
+  },
+  "bestSellers": {
+    "title": "Customer Favorites",
+    "subtitle": "The treats everyone keeps coming back for.",
+    "viewAll": "View All"
+  },
+  "testimonials": {
+    "title": "Sweet Words",
+    "subtitle": "Don't just take our word for it. Here's what our wonderful community has to say.",
+    "bought": "Bought"
+  }
+}
